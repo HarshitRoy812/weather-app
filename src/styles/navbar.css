@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Fraunces';
+    src: url('Fraunces-9ptBlack.woff2') format('woff2'),
+        url('Fraunces-9ptBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Baloo';
+    src: url('Baloo.woff2') format('woff2'),
+        url('Baloo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+.navbar 
+{
+    width : 100%;
+    padding : 15px;
+    display : flex;
+    align-items: center;
+    flex-direction: row;
+}
+.navbar_heading 
+{
+    color : rgba(0,0,0,0.6);
+    font-family: 'Baloo';
+    font-size : 30px;
+}
+
+
+.search 
+{
+    margin-left: auto;
+    position: relative;
+    display : flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.searchbox 
+{
+    height : 40px;
+    width : 300px;
+    outline : none;
+    border : none;
+    border-radius : 5px;
+    background : rgba(222, 226, 230,1);
+    padding : 10px;
+    font-family: Poppins;
+    text-indent : 28px;
+    font-size : 15px;
+    transition : 0.3s ease-in;
+}
+
+.searchbox:focus 
+{
+    background : rgba(248, 249, 250,0.8);
+}
+
+.search_icon 
+{
+    position : absolute;
+    z-index : 30;
+    top : 12px;
+    left : 10px;
+    color : rgba(0,0,0,0.5);
+}
+
+
+.search_btn 
+{
+    height : 40px;
+    width : 100px;
+    outline : none;
+    border : none;
+    border-radius: 5px;
+    margin-left : 10px;
+    background : #ffba08;
+    font-family: 'Baloo';
+    cursor : pointer;
+    font-size : 15px;
+    transition : 0.3s ease-in;
+}
+
+.search_btn:hover 
+{
+    background : #faa307;
+}
