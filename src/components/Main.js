@@ -1,7 +1,7 @@
 import React , {useEffect} from "react";
 import '../styles/main.css';
 
-export default function Main({weather})
+export default function Main({weather,day,time})
 {
     const weather_details = {
         location : weather.name,
@@ -34,6 +34,7 @@ export default function Main({weather})
             <div className = 'weather_content'>
 
                 <h1 id = 'weather_loc' className = 'weather_location'> {weather_details.location} ({weather_details.abbr}) </h1>
+                <p className = 'time_day'> <span> {time} </span> {day} </p>
                 <h1 id = 'weather_temperature' className = 'weather_temp'> {weather_details.temperature}°C </h1>
 
                 <div className = 'temperature'>
